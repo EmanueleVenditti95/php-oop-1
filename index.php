@@ -12,3 +12,6 @@ class Production {
     }
 };
 
+$your_name = new Production('Your Name' , 'Japanese' , 5);
+
+var_dump($your_name);
