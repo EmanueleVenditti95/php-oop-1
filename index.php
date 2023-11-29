@@ -18,12 +18,13 @@ class Production
             $this->rating = intval($rating);
         }
     }
+
+    public function displayFilm($movie)
+    {
+        echo "Title : $movie->title <br> Language : $movie->language <br> Rating : $movie->rating";
+    }
 };
 
-function displayFilm($movie)
-{
-    echo 'Title :' . $movie->title . '<br>' . 'Language :' . $movie->language . '<br>' . 'Rating :' . $movie->rating;
-}
 
 $your_name = new Production('Your Name', 'japanese', 5);
 
@@ -39,7 +40,7 @@ $movies = [
 
 foreach ($movies as $movie) { ?>
     <div class="card">
-        <?php displayFilm($movie); ?>
+        <?php $movie->displayFilm($movie); ?>
     </div>
 <?php } ?>
 
