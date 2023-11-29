@@ -17,7 +17,7 @@ $big_bag_theory = new Serie('The Big Bang Theory', 'english', 4, 12);
 $attack_on_titan = new Serie('Attack on Titan', 'japanese', 5, 4);
 $the_boys = new Serie('The Boys', 'english', 4, 3);
 
-
+var_dump($your_name);
 
 $products = [
     $your_name,
