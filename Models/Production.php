@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/Movie.php';
+require_once __DIR__ . '/Serie.php';
 
 class Production
 {
@@ -21,8 +22,19 @@ class Production
         }
     }
 
-    public function displayMovie($movie)
+    public function displayProduction()
     {
-        echo "Title : $movie->title <br> Language : $movie->language <br> Rating : $movie->rating";
-    }
-};
+?>
+        <ul>
+            <li>
+                <p><span>Title : </span><?php echo $this->title ?></p>
+            </li>
+            <li>
+                <p><span>Language : </span><?php echo $this->language ?></p>
+            </li>
+            <li>
+                <p><span>Rating : </span><?php echo $this->rating ?></p>
+            </li>
+        </ul>
+<?php }
+}; ?>

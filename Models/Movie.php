@@ -12,11 +12,34 @@ class Movie extends Production
         $this->setDuration($_duration);
     }
 
-     public function setProfit($profit) {
-         $this->profit = $profit;
-     }
+    public function setProfit($profit)
+    {
+        $this->profit = $profit;
+    }
 
-     public function setduration($duration) {
+    public function setduration($duration)
+    {
         $this->duration = $duration;
     }
+
+    public function displayProduction()
+    { ?>
+        <ul>
+            <li>
+                <p><span>Title : </span><?php echo $this->title ?></p>
+            </li>
+            <li>
+                <p><span>Language : </span><?php echo $this->language ?></p>
+            </li>
+            <li>
+                <p><span>Rating : </span><?php echo $this->rating ?></p>
+            </li>
+            <li>
+                <p><span>Duration : </span><?php echo $this->duration; ?></p>
+            </li>
+            <li>
+                <p><span>Profit : </span><?php echo $this->profit; ?></p>
+            </li>
+        </ul>
+<?php }
 }
