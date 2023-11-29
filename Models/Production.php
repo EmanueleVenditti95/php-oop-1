@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/Movie.php';
 
 class Production
 {
@@ -6,7 +7,7 @@ class Production
     public $language;
     public $rating;
 
-    function __construct($_title, $_language, $_rating)
+    function __construct(String $_title, String $_language, Int $_rating)
     {
         $this->title = $_title;
         $this->language = $_language;
@@ -20,8 +21,8 @@ class Production
         }
     }
 
-    public function displayFilm($movie)
+    public function displayMovie($movie)
     {
-        echo "Title : $movie->title <br> Language : $movie->language <br> Rating : $movie->rating";
+        echo "Title : $movie->title <br> Language : $movie->language <br> Rating : $movie->rating <br> Duration : $movie->duration min <br> Profit : $movie->profit";
     }
 };
