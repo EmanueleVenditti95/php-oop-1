@@ -23,6 +23,6 @@ class Production
 
     public function displayMovie($movie)
     {
-        echo "Title : $movie->title <br> Language : $movie->language <br> Rating : $movie->rating <br> Duration : $movie->duration min <br> Profit : $movie->profit";
+        echo "Title : $movie->title <br> Language : $movie->language <br> Rating : $movie->rating";
     }
 };

@@ -12,7 +12,7 @@ class Movie extends Production
         $this->duration = $_duration;
     }
 
-    public function getProfit($profit) {
-        $this->profit = $profit;
-    }
+    // public function getProfit($profit) {
+    //     $this->profit = $profit;
+    // }
 }
